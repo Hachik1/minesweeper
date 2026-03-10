@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра Мины</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>💣 Мины</h1>
+        
+        <div class="stats">
+            <div>💎 Безопасно: <span id="safe-count">0</span>/12</div>
+            <div>💣 Мины: <span id="mines-count">4</span></div>
+        </div>
+        
+        <div id="game-board" class="board"></div>
+        
+        <div class="controls">
+            <button id="new-game" class="btn">🔄 Новая игра</button>
+            <button id="close" class="btn">🔙 Закрыть</button>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
